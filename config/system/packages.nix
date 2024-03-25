@@ -7,16 +7,17 @@
   # List System Programs
   environment.systemPackages = with pkgs; [
     wget curl git cmatrix lolcat neofetch htop btop libvirt
-    polkit_gnome lm_sensors unzip unrar libnotify eza
+    polkit_gnome lm_sensors unzip unrar libnotify
     v4l-utils ydotool wl-clipboard socat cowsay lsd lshw
     pkg-config meson hugo gnumake ninja go nodejs symbola
     noto-fonts-color-emoji material-icons brightnessctl
     toybox virt-viewer swappy ripgrep appimage-run 
-    networkmanagerapplet yad playerctl nh
+    networkmanagerapplet yad playerctl nh bat lazygit
+    
   ];
 
   programs = {
-    steam.gamescopeSession.enable = true;
+    #steam.gamescopeSession.enable = true;
     dconf.enable = true;
     seahorse.enable=true;
     hyprland = {

@@ -36,7 +36,7 @@ in with lib; {
       input {
         kb_layout = ${theKBDLayout}, ${theSecondKBDLayout}
 	kb_options = grp:alt_shift_toggle
-        kb_options=caps:super
+        kb_options=super #default caps:super
         follow_mouse = 1
         touchpad {
           natural_scroll = false
@@ -124,7 +124,9 @@ in with lib; {
         new_is_master = true
       }
       bind = ${modifier},T,exec,${terminal}
-      bind = ${modifier}SHIFT,Return,exec,rofi-launcher
+      bind = ${modifier},L,exec,swaylock #Logout
+      bind = ${modifier}SHIFT,L,exec,wlogout #Logout menu
+      bind = ${modifier},A,exec,rofi-launcher
       bind = ${modifier}SHIFT,W,exec,web-search
       bind = ${modifier}SHIFT,N,exec,swaync-client -rs
       ${if browser == "google-chrome" then ''
@@ -135,12 +137,8 @@ in with lib; {
       bind = ${modifier},E,exec,emopicker9000
       bind = ${modifier},S,exec,screenshootin
       bind = ${modifier},D,exec,armcord
-      bind = ${modifier},F,exec,floorp
-      bind = ${modifier},O,exec,obs
       bind = ${modifier},G,exec,gimp
       bind = ${modifier}SHIFT,G,exec,godot4
-      #bind = ${modifier},T,exec,thunar
-      bind = ${modifier},M,exec,spotify
       bind = ${modifier},Q,killactive,
       bind = ${modifier},P,pseudo,
       bind = ${modifier}SHIFT,I,togglesplit,
@@ -187,6 +185,7 @@ in with lib; {
       bind = ${modifier}SHIFT,0,movetoworkspace,10
       bind = ${modifier}CONTROL,right,workspace,e+1
       bind = ${modifier}CONTROL,left,workspace,e-1
+      bind = ${modifier},Tab,workspace,e+1
       bind = ${modifier},mouse_down,workspace, e+1
       bind = ${modifier},mouse_up,workspace, e-1
       bindm = ${modifier},mouse:272,movewindow

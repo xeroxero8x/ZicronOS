@@ -8,7 +8,7 @@ in {
   home.packages = with pkgs; [
     pkgs."${browser}" armcord zoxide libvirt swww grim slurp gnome.file-roller
     swaynotificationcenter rofi-wayland imv transmission-gtk mpv
-    gimp gh eza rustup audacity pavucontrol tree protonup-qt
+    gimp rustup audacity pavucontrol tree protonup-qt
     font-awesome swayidle neovide swaylock
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # Import Scripts

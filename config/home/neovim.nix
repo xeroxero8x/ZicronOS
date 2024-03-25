@@ -52,7 +52,7 @@ in {
       telescope = {
 	enable = true;
 	keymaps = {
-	  "<leader>ff" = "find_files";
+	  "<leader>f" = "find_files";
 	  "<leader>lg" = "live_grep";
 	};
       };
@@ -107,7 +107,7 @@ in {
 	mapping = {
 	  "<CR>" = "cmp.mapping.confirm({ select = true })";
 	  "<Tab>" = {
-	    action = ''cmp.mapping.select_next_item()'';
+	    action =''cmp.mapping.select_next_item()'';
 	    modes = [ "i" "s" ];
 	  };
 	};

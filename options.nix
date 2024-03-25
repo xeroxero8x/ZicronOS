@@ -34,7 +34,7 @@ in {
   clock24h = false;
   theLocale = "en_US.UTF-8";
   theKBDLayout = "us";
-  theSecondKBDLayout = "de";
+  theSecondKBDLayout = "de"; #Default is empty or de
   theKBDVariant = "";
   theLCVariables = "en_GB.UTF-8";
   theTimezone = "Asia/Dhaka";
@@ -67,9 +67,9 @@ in {
   # Enable Flatpak & Larger Programs
   distrobox = false;
   flatpak = false;
-  kdenlive = true;
-  blender = true;
-  enableZeroAD = true;
+  kdenlive = false;
+  blender = false;
+  enableZeroAD = false;
 
   # Enable Support For
   # Logitech Devices

@@ -53,10 +53,9 @@ lib.mkIf (theShell == "zsh") {
       flake-update="nh os switch --nom --hostname ${hostname} --update";
       gcCleanup="nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
       v="nvim";
-      l="eza -lh --icons=auto";
-      ls="eza -1 --icons=auto"; #Default lsd
-      ll="eza -lha --icons=auto --sort=name --group-directories-first"; #Default lsd -l
-      la="lad -a"; #Default lsd -a
+      ls="lsd"; #Default lsd
+      ll="lsd -la"; #Default lsd -l
+      la="lsd -a"; #Default lsd -a
       lal="lsd -al";
       ".."="cd ..";
       cd="z";

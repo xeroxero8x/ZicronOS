@@ -6,7 +6,7 @@ theKBDLayout theSecondKBDLayout; in
   services.xserver = {
     enable = true;
     xkb = {
-      variant = "${theKBDVariant}";
+      variant ="${theKBDVariant}";
       layout = "${theKBDLayout}, ${theSecondKBDLayout}";
     };
     libinput.enable = true;

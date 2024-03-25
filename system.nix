@@ -36,7 +36,6 @@ in {
   };
 
   console.keyMap = "${theKBDLayout}";
-
   # Define a user account.
   users = {
     mutableUsers = true;

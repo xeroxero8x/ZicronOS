@@ -92,9 +92,9 @@ sed -i "/^\s*hostname[[:space:]]*=[[:space:]]*\"/s/\"\(.*\)\"/\"$hostName\"/" ./
 
 echo "-----"
 
-read -p "Enter Your New Git Username: [ John Smith ] " gitUserName
+read -p "Enter Your New Git Username: [ 008 ] " gitUserName
 if [ -z "$gitUserName" ]; then
-  gitUserName="John Smith"
+  gitUserName="008"
 fi
 sed -i "/^\s*gitUsername[[:space:]]*=[[:space:]]*\"/s/\"\(.*\)\"/\"$gitUserName\"/" ./options.nix
 
@@ -124,9 +124,9 @@ sed -i "/^\s*theKBDLayout[[:space:]]*=[[:space:]]*\"/s/\"\(.*\)\"/\"$kbdLayout\"
 
 echo "-----"
 
-read -p "Enter Your Timezone: [ America/New_York ] " timezone
+read -p "Enter Your Timezone: [ Asia/Dhaka ] " timezone
 if [ -z "$timezone" ]; then
-  timezone="America/New_York"
+  timezone="Asia/Dhaka"
 fi
 escaped_timezone=$(echo "$timezone" | sed 's/\//\\\//g')
 sed -i "/^\s*theTimezone[[:space:]]*=[[:space:]]*\"/s#\"\(.*\)\"#\"$escaped_timezone\"#" ./options.nix
