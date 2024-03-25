@@ -25,23 +25,23 @@ echo "-----"
 
 # Check For Persistence. Backing up current flake files
 # with it enabled is not yet implemented.
-persistState=$(cat zaneyos/hardware.nix | grep persistence | wc -l)
+persistState=$(cat zicronos/hardware.nix | grep persistence | wc -l)
 if [ $persistState -eq 0 ]; then
   backupname=$(date "+%Y-%m-%d-%H-%M-%S")
-  if [ -d "zaneyos" ]; then
-    echo "ZaneyOS exists, backing up to .config/zaneyos-backups folder."
-    if [ -d ".config/zaneyos-backups" ]; then
-      echo "Moving current version of ZaneyOS to backups folder."
-      mv $HOME/zaneyos .config/zaneyos-backups/$backupname
+  if [ -d "zicronos" ]; then
+    echo "ZicronOS exists, backing up to .config/zicronos-backups folder."
+    if [ -d ".config/zicronos-backups" ]; then
+      echo "Moving current version of ZicronOS to backups folder."
+      mv $HOME/zicronos .config/zicronos-backups/$backupname
       sleep 1
     else
-      echo "Creating the backups folder & moving ZaneyOS to it."
-      mkdir -p .config/zaneyos-backups
-      mv $HOME/zaneyos .config/zaneyos-backups/$backupname
+      echo "Creating the backups folder & moving ZicronOS to it."
+      mkdir -p .config/zicronos-backups
+      mv $HOME/zicronos .config/zicronos-backups/$backupname
       sleep 1
     fi
   else
-    echo "Thank you for choosing ZaneyOS."
+    echo "Thank you for choosing ZicronOS."
     echo "I hope you find your time here enjoyable!"
   fi
 fi
@@ -54,9 +54,9 @@ sleep 2
 
 echo "-----"
 
-echo "Cloning & Entering ZaneyOS Repository"
-git clone https://gitlab.com/zaney/zaneyos.git
-cd zaneyos
+echo "Cloning & Entering ZicronOS Repository"
+git clone https://gitlab.com/xeroxero8x/zicronos.git
+cd zicronos
 
 echo "-----"
 
@@ -327,5 +327,5 @@ fi
 
 echo "-----"
 
-echo "ZaneyOS Has Been Installed!"
+echo "ZicronOS Has Been Installed!"
 echo "Please use responsibly."
