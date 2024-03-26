@@ -15,13 +15,13 @@ pkgs.writeShellScriptBin "list-hypr-bindings" ''
   --column=Command: \
   --timeout=90 \
   --timeout-indicator=right \
-  " = Windows/Super/CAPS LOCK" "Modifier Key, used for keybindings" "Doesn't really execute anything by itself." \
-  " + ENTER" "Terminal" "${terminal}" \
-  " + SHIFT + ENTER" "Rofi App Launcher" "rofi -show drun" \
+  " = Windows/Super" "Modifier Key, used for keybindings" "Doesn't really execute anything by itself." \
+  " + T" "Terminal" "${terminal}" \
+  " + A" "Rofi App Launcher" "rofi -show drun" \
   " + Q" "Kill Focused Window" "killactive" \
   " + SHIFT + W" "Search Websites Like Nix Packages" "web-search" \
   " + SHIFT + N" "Reload SwayNC Styling" "swaync-client -rs" \
-  " + W" "Launch Web Browser" "${browser}" \
+  " + F" "Launch Web Browser" "${browser}" \
   " + E" "Launch Emoji Selector" "emopicker9000" \
   " + S" "Take Screenshot" "screenshootin" \
   " + D" "Launch Discord" "discord" \
@@ -31,7 +31,7 @@ pkgs.writeShellScriptBin "list-hypr-bindings" ''
   " + M" "Launch Spotify" "spotify" \
   " + P" "Pseudo Tiling" "pseudo" \
   " + SHIFT + I" "Toggle Split Direction" "togglesplit" \
-  " + F" "Toggle Focused Fullscreen" "fullscreen" \
+  "ALT + Enter" "Toggle Focused Fullscreen" "fullscreen" \
   " + SHIFT + F" "Toggle Focused Floating" "fullscreen" \
   " + SHIFT + C" "Quit / Exit Hyprland" "exit" \
   " + Left" "Move Focus To Window On The Left" "movefocus,l" \
@@ -56,6 +56,7 @@ pkgs.writeShellScriptBin "list-hypr-bindings" ''
   " + SHIFT + 1-0" "Move Focused Window To Workspace 1 - 10" "movetoworkspace,X" \
   " + MOUSE_LEFT" "Move/Drag Window" "movewindow" \
   " + MOUSE_RIGHT" "Resize Window" "resizewindow" \
-  "ALT + TAB" "Cycle Window Focus + Bring To Front" "cyclenext & bringactivetotop" \
+  " + TAB" "Cycle Through Workspace" "cyclenext" \
+  "ALT + TAB" "Cycle Window Focus + Bring To Front" "cyclenext & bringactivetotop" 
   ""
 ''

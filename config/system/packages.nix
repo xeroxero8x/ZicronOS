@@ -11,15 +11,15 @@
     v4l-utils ydotool wl-clipboard socat cowsay lsd lshw
     pkg-config meson hugo gnumake ninja go nodejs symbola
     noto-fonts-color-emoji material-icons brightnessctl
-    toybox virt-viewer swappy ripgrep appimage-run 
+    toybox swappy ripgrep appimage-run #virt-viewer
     networkmanagerapplet yad playerctl nh bat lazygit
     
   ];
 
   programs = {
-    #steam.gamescopeSession.enable = true;
+    steam.gamescopeSession.enable = false;
     dconf.enable = true;
-    seahorse.enable=true;
+    seahorse.enable=false;
     hyprland = {
       enable = true;
       package = inputs.hyprland.packages.${pkgs.system}.hyprland;
@@ -28,11 +28,11 @@
     fuse.userAllowOther = true;
     mtr.enable = true;
     gnupg.agent = {
-      enable = true;
-      enableSSHSupport = true;
+      enable = false;
+      enableSSHSupport = false;
     };
-    virt-manager.enable = true;
+    virt-manager.enable = false;
   };
 
-  virtualisation.libvirtd.enable = true;
+  virtualisation.libvirtd.enable = false;
 }
