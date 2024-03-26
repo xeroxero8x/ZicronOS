@@ -1,6 +1,6 @@
 <div align="center">
 
-## ZaneyOS 🟰 Best ❄️ NixOS Configs
+## ZicronOS 🟰 Fork Of ZaneyOS ❄️ NixOS Configs
 
 ZaneyOS is a simple way of reproducing my configuration on any NixOS system. This includes the wallpaper, scripts, applications, config files, and more.
 
@@ -16,13 +16,12 @@ ZaneyOS is a simple way of reproducing my configuration on any NixOS system. Thi
 - Must have installed using GPT & UEFI.
 - Change settings through script or manually editing options.nix file.
 
-#### 🎹 Pipewire, Spotify, & Notification Menu Controls
-- We are using the latest and greatest audio solution for Linux. If you like listening to music Spotify comes pre-installed out of the box. Not to mention you will have media and volume controls in the notification center available in the top bar.
+#### 🎹 Pipewire & Notification Menu Controls
+- We are using the latest and greatest audio solution for Linux. Not to mention you will have media and volume controls in the notification center available in the top bar.
 
-#### 🏇 Optimized Workflow, tmpfs For Speed, & Simple Yet Elegant Neovim
+#### 🏇 Optimized Workflow, tmpfs For Speed, & Simple Yet Elegant Neovim With Lazyvim As Distro
 - Using scratchpads with Hyprland for increased functionality and effeciency.
 - A tmpfs for the /tmp directory is created improving rebuild time and reducing strain on hdd/ssd.
-- No massive Neovim project here. This is my simple, easy to understand, yet incredible Neovim setup. You can grep recursively through entire folders and find specific files without ever leaving the text editor!
 
 <div align="center">
 
