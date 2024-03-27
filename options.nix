@@ -46,6 +46,9 @@ in {
   cpuType = "intel";
   gpuType = "intel";
 
+  # Enable ADB & FastBoot
+  androidDev = true;
+
   # Nvidia Hybrid Devices
   # ONLY NEEDED FOR HYBRID
   # SYSTEMS! 
