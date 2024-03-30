@@ -43,11 +43,11 @@ pkgs.writeShellScriptBin "list-hypr-bindings" ''
   " + SHIFT + Up" "Move Focused Window Up" "movewindow,u" \
   " + SHIFT + Down" "Move Focused Window Down" "movewindow,d" \
   " + H" "Move Focus To Window On The Left" "movefocus,l" \
-  " + L" "Move Focus To Window On The Right" "movefocus,r" \
+  " + L" "Log out" "swaylock" \
   " + K" "Move Focus To Window On The Up" "movefocus,u" \
   " + J" "Move Focus To Window On The Down" "movefocus,d" \
   " + SHIFT + H" "Move Focused Window Left" "movewindow,l" \
-  " + SHIFT + L" "Move Focused Window Right" "movewindow,r" \
+  " + SHIFT + L" "Trigger Power Menu" "wlogout" \
   " + SHIFT + K" "Move Focused Window Up" "movewindow,u" \
   " + SHIFT + J" "Move Focused Window Down" "movewindow,d" \
   " + SPACE" "Toggle Special Workspace" "togglespecialworkspace" \

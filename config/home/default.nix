@@ -4,7 +4,6 @@
   imports = [
     # Enable &/ Configure Programs
     ./alacritty.nix
-    ./android.nix
     ./bash.nix
     ./gtk-qt.nix
     ./hyprland.nix
