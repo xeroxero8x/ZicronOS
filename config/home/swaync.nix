@@ -91,8 +91,8 @@ in {
                         "command": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
                     },
                     {
-                        "label": "🎮",
-                        "command": "steam"
+                        "label": "♾",
+                        "command": "appimage-run ~/Downloads/QuickShare_0.4.1.AppImage"
                     },
                     {
                         "label": "🌏",
