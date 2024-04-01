@@ -37,12 +37,8 @@ Please do yourself a favor and [read the wiki](https://zaney.org/zaneyos/).
 
 #### 🙋 Having Issues / Questions?
 - Please feel free to raise an issue on the repo, please label a feature request with the title beginning with [feature request], thank you!
-- Contact me on [Discord](https://discord.gg/2cRdBs8) as well, for a potentially faster response.
+- Contact me on [Telegram](https://t.me/DM008S) as well, for a potentially faster response.
 
-#### ⚠️ Important Changes!
-- **The stable branch is gone, this means this project changes as my system changes. This will help with managing documentation. From now on before updating the repository please ensure the flake is not in maintenance mode. If an announcement has not been made on top of this page and Discord then its safe to pull and use the repository.**
-- The [Wiki](https://zaney.org/zaneyos/) has moved to [my website](https://zaney.org). This will make it so the documentation looks better and is more easily searched. You can click the search icon in the menu, on desktop, to search through any page in the entire website.
-- **Impermanence/persistence has been moved to only being sourced inside the hardware.nix file. If you want to use this feature then please read the Wiki page about how to implement it.**
 
 ### ⬇️ Install
 
@@ -54,7 +50,7 @@ Simply copy this and run it:
 
 ```
 nix-shell -p git curl
-sh <(curl -L https://gitlab.com/Zaney/zaneyos/-/raw/main/install-zaneyos.sh)
+sh <(curl -L https://raw.githubusercontent.com/xeroxero8x/ZicronOS/main/install-zicronos.sh)
 ```
 
 #### 🦽 Manual:
@@ -68,8 +64,8 @@ nix-shell -p git vim
 Clone this repo & enter it:
 
 ```
-git clone https://gitlab.com/zaney/zaneyos.git
-cd zaneyos
+git clone https://github.com/xeroxero8x/ZicronOS.git
+cd ZicronOS
 ```
 
 - *You should stay in this folder for the rest of the install*
