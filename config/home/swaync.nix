@@ -92,7 +92,7 @@ in {
                     },
                     {
                         "label": "♾",
-                        "command": "appimage-run ~/Downloads/QuickShare_0.4.1.AppImage"
+                        "command": "appimage-run ./files/appimage/QuickShare_0.4.1.AppImage"
                     },
                     {
                         "label": "🌏",
