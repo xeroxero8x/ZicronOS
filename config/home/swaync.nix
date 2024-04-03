@@ -79,8 +79,8 @@ in {
                         "command": "thunar"
                     },
                     {
-                        "label": "📸",
-                        "command": "gimp"
+                        "label": "📲",
+                        "command": "kdeconnect-app"
                     },
                     {
                         "label": "📣",
@@ -92,11 +92,11 @@ in {
                     },
                     {
                         "label": "♾",
-                        "command": "appimage-run ./files/appimage/QuickShare_0.4.1.AppImage"
+                        "command": "appimage-run ~/zicronos/config/home/files/appimage/QuickShare_0.4.1.AppImage"
                     },
                     {
-                        "label": "🌏",
-                        "command": "firefox"
+                        "label": "🦊",
+                        "command": "floorp"
                     },
                     {
                         "label": "📹",

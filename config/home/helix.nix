@@ -11,15 +11,24 @@
     insert = "bar"
     normal = "block"
     select = "underline"
-
-    [key.normal]
-    C-s = ":w"
+    [keys.normal]
+    C-s = ":x"
+    [keys.insert]
+    C-s = [":w", "normal_mode"]
   '';
   home.file.".config/helix/language.toml".text = ''
     [[language]]
     name = "nix"
+    language-servers =[ "ncl" ]
     formatter = {command = "nixpkgs-fmt"}
-    
-    
+
+    [[language]]
+    name = "markdown"
+    language-servers = [ "marksman" "ltex-ls"]
+
+    [[language]]
+    name = "toml"
+    formatter = { command = "taplo", args = ["fmt", "-"] }
+
   '';
 }

@@ -18,12 +18,14 @@
     nodePackages.bash-language-server
     vscode-langservers-extracted
     marksman
-        
+    ltex-ls
+    taplo
   ];
 
   programs = {
     steam.gamescopeSession.enable = false;
     dconf.enable = true;
+    kdeconnect.enable = true;
     adb.enable = true;
     seahorse.enable=false;
     hyprland = {

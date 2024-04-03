@@ -21,7 +21,7 @@ in {
   bar-number = true; # Enable / Disable Workspace Numbers In Waybar
   borderAnim = true;
   browser = "floorp";
-  wallpaperGit = "https://gitlab.com/Zaney/my-wallpapers.git"; # This will give you my wallpapers
+  wallpaperGit = "https://github.com/xeroxero8x/wallpapers.git"; # This will give you my wallpapers
   # ^ (use as is or replace with your own repo - removing will break the wallsetter script) 
   wallpaperDir = "${userHome}/Pictures/Wallpapers";
   screenshotDir = "${userHome}/Pictures/Screenshots";
@@ -46,8 +46,8 @@ in {
   cpuType = "intel";
   gpuType = "intel";
 
-  # Enable ADB & FastBoot
-  androidDev = true;
+  # Enable Steam
+  steam = false;
 
   # Nvidia Hybrid Devices
   # ONLY NEEDED FOR HYBRID
@@ -73,7 +73,6 @@ in {
   kdenlive = false;
   blender = false;
   enableZeroAD = false;
-
   # Enable Support For
   # Logitech Devices
   logitech = true;
