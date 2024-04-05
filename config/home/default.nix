@@ -8,7 +8,7 @@
     ./gtk-qt.nix
     ./helix.nix
     ./hyprland.nix
-    ./hyprlock.nix
+#    ./hyprlock.nix
     ./kdenlive.nix
     ./kitty.nix
     ./neofetch.nix
@@ -22,7 +22,6 @@
     ./swaylock.nix
     ./swaync.nix
     ./wezterm.nix
-    ./zeroad.nix
     ./zsh.nix
 
     # Place Home Files Like Pictures

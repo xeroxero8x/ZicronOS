@@ -11,6 +11,7 @@
   home.file.".config/swaylock-bg.jpg".source = ./files/media/swaylock-bg.jpg;
   home.file.".config/ascii-neofetch".source = ./files/ascii-neofetch;
   home.file.".config/nvim".source = ./files/nvim;
+  home.file.".config/hyprlock-bg.png".source = ./files/media/hyprlock-bg.png;
   home.file.".local/share/fonts" = {
     source = ./files/fonts;
     recursive = true;

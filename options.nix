@@ -31,7 +31,7 @@ in {
   terminal = "kitty"; # This sets the terminal that is used by the hyprland terminal keybinding
 
   # System Settings
-  clock24h = false;
+  clock24h = true;
   theLocale = "en_US.UTF-8";
   theKBDLayout = "us";
   theSecondKBDLayout = "de"; #Default is empty or de
@@ -46,8 +46,6 @@ in {
   cpuType = "intel";
   gpuType = "intel";
 
-  # Enable Steam
-  steam = false;
 
   # Nvidia Hybrid Devices
   # ONLY NEEDED FOR HYBRID
@@ -75,7 +73,7 @@ in {
   enableZeroAD = false;
   # Enable Support For
   # Logitech Devices
-  logitech = true;
+  logitech = false;
 
   # Enable Terminals
   # If You Disable All You Get Kitty
