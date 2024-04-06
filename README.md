@@ -1,5 +1,5 @@
 <div align="center">
-![logo](./config/home/files/media/image_1.png)
+! [logo] (./config/home/files/media/image_1.png) <br>
 ## ZicronOS 🟰 Fork Of ZaneyOS ❄️ NixOS Configs
 
 ZaneyOS is a simple way of reproducing my configuration on any NixOS system. This includes the wallpaper, scripts, applications, config files, and more.
