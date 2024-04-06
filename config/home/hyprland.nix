@@ -127,6 +127,7 @@ in with lib; {
       bind = ${modifier},L,exec,swaylock #Logout
       bind = ${modifier}SHIFT,L,exec,wlogout #Logout menu
       bind = ${modifier},A,exec,rofi-launcher
+      bind = ${modifier},R,exec,rofi -show filebrowser
       bind = ${modifier}SHIFT,W,exec,web-search
       bind = ${modifier}SHIFT,N,exec,swaync-client -rs
       ${if browser == "google-chrome" then ''
