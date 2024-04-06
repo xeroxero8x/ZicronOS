@@ -19,7 +19,7 @@ in {
   slickbar = if waybarStyle == "slickbar" then true else false;
   simplebar = if waybarStyle == "simplebar" then true else false;
   bar-number = true; # Enable / Disable Workspace Numbers In Waybar
-  borderAnim = true;
+  borderAnim = false;
   browser = "floorp";
   wallpaperGit = "https://github.com/xeroxero8x/wallpapers.git"; # This will give you my wallpapers
   # ^ (use as is or replace with your own repo - removing will break the wallsetter script) 

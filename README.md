@@ -48,7 +48,7 @@ This is the easiest and recommended way of starting out. The script is not meant
 
 Simply copy this and run it:
 
-```
+```bash
 nix-shell -p git curl
 sh <(curl -L https://raw.githubusercontent.com/xeroxero8x/ZicronOS/main/install-zicronos.sh)
 ```
@@ -57,15 +57,15 @@ sh <(curl -L https://raw.githubusercontent.com/xeroxero8x/ZicronOS/main/install-
 
 Run this command to ensure Git & Vim are installed:
 
-```
+```bash
 nix-shell -p git vim
 ```
 
 Clone this repo & enter it:
 
-```
-git clone https://github.com/xeroxero8x/ZicronOS.git
-cd ZicronOS
+```bash
+git clone https://github.com/xeroxero8x/zicronos.git
+cd zicronos
 ```
 
 - *You should stay in this folder for the rest of the install*
@@ -74,23 +74,23 @@ cd ZicronOS
 
 Generate your hardware.nix like so:
 
-```
+```bash
 nixos-generate-config --show-hardware-config > hardware.nix
 ```
 
 Run this to enable flakes and install the flake replacing hostname with whatever you put in the options.nix file:
 
-```
+```bash
 NIX_CONFIG="experimental-features = nix-command flakes" 
 sudo nixos-rebuild switch --flake .#hostname
 ```
 
 This Flake's user will have the password be set for them as *password*. If you want to change it run a command replacing password with whatever you want to be your password. You then need to copy the output that it gives you like below into your hashedPassword in the system.nix file.
 
-```
-  mkpasswd -m sha-512 password
+```bash
+  mkpasswd -m sha-512 yourpassword
 
-$6$YdPBODxytqUWXCYL$AHW1U9C6Qqkf6PZJI54jxFcPVm2sm/XWq3Z1qa94PFYz0FF.za9gl5WZL/z/g4nFLQ94SSEzMg5GMzMjJ6Vd7.
+$6$JABgp4VNnz1sC9PD$kCkGdV3U4jzEDjWurDwcEeC4yhMHRZ.R.o0XfhYW1Vod6Wi7zrWWTHB3a7FzZzVaCSZhaB5itqqPHryN0GI6D/
 ```
 
 Now when you want to rebuild the configuration you have access to an alias called flake-rebuild that will rebuild the flake based of the flakeDir variable you set in options.nix!
