@@ -10,6 +10,7 @@ in {
     swaynotificationcenter rofi-wayland imv transmission-gtk mpv
     gimp rustup audacity pavucontrol tree protonup-qt tldr ffmpeg
     font-awesome swayidle neovide swaylock zip trash-cli helix
+    jp2a asciidoctor yazi-unwrapped
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # Import Scripts
     (import ./../scripts/emopicker9000.nix { inherit pkgs; })
