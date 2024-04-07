@@ -1,9 +1,8 @@
 <div align="center">
 <img align="center" width="250px" src="https://github.com/xeroxero8x/ZicronOS/blob/main/config/home/files/media/logo.png"> 
 <br> 
-<h1>❄️ ixOS Configss </h1>
+<h1> ❄️ NixOS Config</h1>
 
-ZaneyOS is a simple way of reproducing my configuration on any NixOS system. This includes the wallpaper, scripts, applications, config files, and more.
 
 <img align="center" width="80%" src="https://gitlab.com/Zaney/zaneyos/-/raw/main/config/home/files/media/demo.jpg" />
 
