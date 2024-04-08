@@ -85,6 +85,6 @@ in {
   python = false;
   
   # Enable SyncThing
-  syncthing = false;
+  syncthing = true;
 
 }
