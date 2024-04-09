@@ -9,8 +9,8 @@ in {
     pkgs."${browser}" armcord zoxide libvirt swww grim slurp gnome.file-roller
     swaynotificationcenter rofi-wayland imv transmission-gtk mpv
     gimp rustup audacity pavucontrol tree protonup-qt tldr ffmpeg
-    font-awesome swayidle neovide swaylock zip trash-cli helix
-    jp2a asciidoctor yazi-unwrapped
+    font-awesome swayidle swaylock zip trash-cli helix keepassxc
+    jp2a asciidoctor yazi 
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # Import Scripts
     (import ./../scripts/emopicker9000.nix { inherit pkgs; })

@@ -2,10 +2,6 @@
 
 let inherit (import ../../options.nix) flakeDir theShell hostname; in
 lib.mkIf (theShell == "zsh") {
-  programs.zoxide = {
-    enable = true;
-    enableZshIntegration = true;
-  };
   programs.zsh = {
     enable = true;
     syntaxHighlighting.enable = true;

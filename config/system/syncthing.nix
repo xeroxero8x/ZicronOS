@@ -8,6 +8,7 @@ lib.mkIf (syncthing == true) {
         user = "${username}";
         dataDir = "/home/${username}";    # Default folder for new synced folders
         configDir = "/home/${username}/.config/syncthing";   # Folder for Syncthing's settings and keys
+        package = pkgs.syncthing;
         };
     };
 }

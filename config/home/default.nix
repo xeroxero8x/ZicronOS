@@ -13,6 +13,7 @@
     ./kitty.nix
     ./neofetch.nix
     ./neovim.nix
+    ./nushell.nix
     ./packages.nix
     ./rofi.nix
     ./starship.nix
