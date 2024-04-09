@@ -23,6 +23,7 @@
     ./swaylock.nix
     ./swaync.nix
     ./wezterm.nix
+    ./zoxide.nix
     ./zsh.nix
 
     # Place Home Files Like Pictures

@@ -1,7 +1,7 @@
 {config, lib, pkgs, ...}:
 
 let inherit (import ../../options.nix) flakeDir theShell hostname;in
-{
+lib.mkIf (theShell == "nushell") {
   programs.nushell = {
     enable = true;
     shellAliases = {
@@ -12,5 +12,25 @@ let inherit (import ../../options.nix) flakeDir theShell hostname;in
       cd = "z";
       neofetch = "neofetch --ascii ~/.config/ascii-neofetch";
     };
+    extraConfig = let 
+    conf = builtins.toJSON {
+      show_banner=false;
+      edit_mode="vi";      
+      shell_integration = true;
+      ls.clickable_links = true;
+      rm.always_trash = true;
+      table = {
+        mode = "rounded";
+        index_mode = "always";
+        header_on_separator = false;
+      };  
+      cursor_shape = {
+        vi_insert= "line";
+        vi_normal = "block";
+      };
+    };
+in ''
+   $env.config = ${conf}; 
+''; 
   };
 }

@@ -53,7 +53,6 @@ pkgs.writeShellScriptBin "wallsetter" ''
         ;;
       esac
       ${pkgs.swww}/bin/swww img "$WALLPAPER" $TRANSITION
-      swww-daemon --format xrgb
       sleep $TIMEOUT
     fi
   done

@@ -8,18 +8,18 @@ let
   hostname = "nixos";
   userHome = "/home/${username}";
   flakeDir = "${userHome}/zicronos";
-  waybarStyle = "simplebar"; # simplebar, slickbar, or default
+  waybarStyle = "slickbar"; # simplebar, slickbar, or default
 in {
   # User Variables
   username = "kdx";
   hostname = "nixos";
   gitUsername = "008";
   gitEmail = "147173391+xeroxero8x@users.noreply.github.com";
-  theme = "atelier-cave";
+  theme = "tokyo-night-storm";
   slickbar = if waybarStyle == "slickbar" then true else false;
   simplebar = if waybarStyle == "simplebar" then true else false;
   bar-number = true; # Enable / Disable Workspace Numbers In Waybar
-  borderAnim = false;
+  borderAnim = false; #Warning: Do not activate if you have a low end cpu
   browser = "floorp";
   wallpaperGit = "https://github.com/xeroxero8x/wallpapers.git"; # This will give you my wallpapers
   # ^ (use as is or replace with your own repo - removing will break the wallsetter script) 
@@ -38,7 +38,7 @@ in {
   theKBDVariant = "";
   theLCVariables = "en_GB.UTF-8";
   theTimezone = "Asia/Dhaka";
-  theShell = "zsh"; # Possible options: bash, zsh
+  theShell = "zsh"; # Possible options: bash, zsh, nushell
   theKernel = "zen"; # Possible options: default, latest, lqx, xanmod, zen
   sdl-videodriver = "wayland"; # Either x11 or wayland ONLY. Games might require x11 set here
   # For Hybrid Systems intel-nvidia
@@ -70,8 +70,7 @@ in {
   flatpak = false;
   kdenlive = false;
   blender = false;
-  enableZeroAD = false;
-  # Enable Support For
+    # Enable Support For
   # Logitech Devices
   logitech = false;
 

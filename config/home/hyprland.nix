@@ -110,7 +110,7 @@ in with lib; {
       exec-once = $POLKIT_BIN
       exec-once = dbus-update-activation-environment --systemd --all
       exec-once = systemctl --user import-environment QT_QPA_PLATFORMTHEME WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-      exec-once = swww init
+      exec-once = swww-daemon --format xrgb
       exec-once = waybar
       exec-once = swaync
       exec-once = wallsetter
@@ -130,11 +130,9 @@ in with lib; {
       bind = ${modifier},R,exec,rofi -show filebrowser
       bind = ${modifier}SHIFT,W,exec,web-search
       bind = ${modifier}SHIFT,N,exec,swaync-client -rs
-      ${if browser == "google-chrome" then ''
-	bind = ${modifier},W,exec,google-chrome-stable
-      '' else ''
-	bind = ${modifier},F,exec,${browser}
-      ''}
+	    bind = ${modifier},F,exec,${browser}
+      bind = ${modifier},W,exec, wallsetter
+      bind = ${modifier},K,exec, list-hypr-bindings
       bind = ${modifier},E,exec,emopicker9000
       bind = ${modifier},S,exec,screenshootin
       bind = ${modifier},D,exec,armcord

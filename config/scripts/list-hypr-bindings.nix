@@ -18,6 +18,7 @@ pkgs.writeShellScriptBin "list-hypr-bindings" ''
   " = Windows/Super" "Modifier Key, used for keybindings" "Doesn't really execute anything by itself." \
   " + T" "Terminal" "${terminal}" \
   " + A" "Rofi App Launcher" "rofi -show drun" \
+  " + R" "Rofi File Browser" "rofi -show filebrowser" \
   " + Q" "Kill Focused Window" "killactive" \
   " + SHIFT + W" "Search Websites Like Nix Packages" "web-search" \
   " + SHIFT + N" "Reload SwayNC Styling" "swaync-client -rs" \

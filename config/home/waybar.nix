@@ -12,10 +12,12 @@ in with lib; {
     settings = [{
       layer = "top";
       position = "top";
-
+      margin-top = 0;
+      margin-bottom = 0;
+      height = 7;
       modules-center = [ "clock" ] ;
       modules-left = [ "custom/startmenu" "hyprland/workspaces" "hyprland/window" "pulseaudio" ];
-      modules-right = [ "custom/hyprbindings" "cpu" "memory" "custom/exit" "idle_inhibitor" "custom/themeselector" "custom/notification" "battery" "tray" ];
+      modules-right = [ "cpu" "memory" "custom/exit" "idle_inhibitor" "custom/themeselector" "custom/notification" "battery" "tray" ];
 
       "hyprland/workspaces" = {
       	format = if bar-number == true then "{name}" else "{icon}";
@@ -28,10 +30,9 @@ in with lib; {
       	on-scroll-down = "hyprctl dispatch workspace e-1";
       };
       "clock" = {
-	format = ''{: %H:%M}'' ;
-#	else ''{: %I:%M %p}'';
-      	tooltip = true;
-	tooltip-format = "<big>{:%A, %d.%B %Y }</big><tt><small>{calendar}</small></tt>";
+    	format = ''{: %H:%M}'' ;
+     	tooltip = true;
+	    tooltip-format = "<big>{:%A, %d.%B %Y }</big><tt><small>{calendar}</small></tt>";
       };
       "hyprland/window" = {
       	max-length = 25;
