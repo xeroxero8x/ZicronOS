@@ -114,6 +114,8 @@ in with lib; {
       exec-once = waybar
       exec-once = swaync
       exec-once = wallsetter
+      exec-once = wl-paste --type text --watch cliphist store
+      exec-once = wl-paste --type image --watch cliphist store
       exec-once = nm-applet --indicator
       exec-once = swayidle -w timeout 720 'swaylock -f' timeout 800 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on' before-sleep 'swaylock -f -c 000000'
       dwindle {
@@ -128,6 +130,7 @@ in with lib; {
       bind = ${modifier}SHIFT,L,exec,wlogout #Logout menu
       bind = ${modifier},A,exec,rofi-launcher
       bind = ${modifier},R,exec,rofi -show filebrowser
+      bind = ${modifier},V,exec,cliphist list | rofi -dmenu | cliphist decode | wl-copy
       bind = ${modifier}SHIFT,W,exec,web-search
       bind = ${modifier}SHIFT,N,exec,swaync-client -rs
 	    bind = ${modifier},F,exec,${browser}

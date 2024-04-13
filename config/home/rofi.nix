@@ -4,128 +4,106 @@ let
   palette = config.colorScheme.palette;
 in {
   home.file.".config/rofi/config.rasi".text = ''
-    @theme "/dev/null"
+  * {
+    font: "JetBrains Nerd Fontt 13";
+    g-spacing: 10px;
+    g-margin: 0;
+    b-color: #000000FF;
+    fg-color: #FFFFFFFF;
+    fgp-color: #888888FF;
+    b-radius: 8px;
+    g-padding: 8px;
+    hl-color: #FFFFFFFF;
+    hlt-color: #000000FF;
+    alt-color: #111111FF;
+    wbg-color: #000000CC;
+    w-border: 2px solid;
+    w-border-color: #FFFFFFFF;
+    w-padding: 12px;
+}
 
-    * {
-      bg: #${palette.base00};
-      background-color: @bg;
-    }
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: " ";
+}
 
-    configuration {
-      modi:		    "run,filebrowser,drun";
-      show-icons:	    true;
-      icon-theme:	    "Papirus";
-      location:		    0;
-      font:		    "JetBrains Nerd Font 16";	
-      drun-display-format:  "{icon} {name}";
-      display-drun:	    "   Apps ";
-      display-run:	    "   Run ";
-      display-filebrowser:  "   File ";
-    }
+listview {
+    columns: 1;
+    lines: 7;
+    fixed-height: true;
+    fixed-columns: true;
+    cycle: false;
+    scrollbar: false;
+    border: 0px solid;
+}
 
-    window { 
-      width: 45%;
-      transparency: "real";
-      orientation: vertical;
-      border: 2px ;
-      border-color: #${palette.base0F};
-      border-radius: 10px;
-    }
+window {
+    transparency: "real";
+    width: 450px;
+    border-radius: @b-radius;
+    background-color: @wbg-color;
+    border: @w-border;
+    border-color: @w-border-color;
+    padding: @w-padding;
+}
 
-    mainbox {
-      children: [ inputbar, listview, mode-switcher ];
-    }
+prompt {
+    text-color: @fg-color;
+}
 
-    // ELEMENT
-    // -----------------------------------
+inputbar {
+    children: ["prompt", "entry"];
+    spacing: @g-spacing;
+}
 
-    element {
-      padding: 8 14;
-      text-color: #${palette.base05};
-      border-radius: 5px;
-    }
+entry {
+    placeholder: "Search ";
+    text-color: @fg-color;
+    placeholder-color: @fgp-color;
+}
 
-    element selected {
-      text-color: #${palette.base01};
-      background-color: #${palette.base0C};
-    }
+mainbox {
+    spacing: @g-spacing;
+    margin: @g-margin;
+    padding: @g-padding;
+    children: ["inputbar", "listview", "message"];
+}
 
-    element-text {
-      background-color: inherit;
-      text-color: inherit;
-    }
+element {
+    spacing: @g-spacing;
+    margin: @g-margin;
+    padding: @g-padding;
+    border: 0px solid;
+    border-radius: @b-radius;
+    border-color: @b-color;
+    background-color: transparent;
+    text-color: @fg-color;
+}
 
-    element-icon {
-      size: 24 px;
-      background-color: inherit;
-      padding: 0 6 0 0;
-      alignment: vertical;
-    }
+element normal.normal {
+	background-color: transparent;
+	text-color: @fg-color;
+}
 
-    listview {
-      columns: 2;
-      lines: 9;
-      padding: 8 0;
-      fixed-height: true;
-      fixed-columns: true;
-      fixed-lines: true;
-      border: 0 10 6 10;
-    }
+element alternate.normal {
+	background-color: @alt-color;
+	text-color: @fg-color;
+}
 
-    // INPUT BAR 
-    //------------------------------------------------
+element selected.active {
+	background-color: @hl-color;
+	text-color: @hlt-color;
+}
 
-    entry {
-      text-color: #${palette.base05};
-      padding: 10 10 0 0;
-      margin: 0 -2 0 0;
-    }
+element selected.normal {
+	background-color: @hl-color;
+	text-color: @hlt-color;
+}
 
-    inputbar {
-      background-image: url("~/.config/rofi/rofi.jpg", width);
-      padding: 180 0 0;
-      margin: 0 0 0 0;
-    } 
-
-    prompt {
-      text-color: #${palette.base0D};
-      padding: 10 6 0 10;
-      margin: 0 -2 0 0;
-    }
-
-    // Mode Switcher
-    //------------------------------------------------
-
-    mode-switcher {
-      border-color:   #${palette.base0F};
-      spacing:	      0;
-    }
-
-    button {
-      padding:	      10px;
-      background-color: @bg;
-      text-color:	      #${palette.base01};
-      vertical-align:   0.5; 
-      horizontal-align: 0.5;
-    }
-
-    button selected {
-      background-color: @bg;
-      text-color: #${palette.base0F};
-    }
-
-    message {
-      background-color: @bg;
-      margin: 2px;
-      padding: 2px;
-      border-radius: 5px;
-    }
-
-    textbox {
-      padding: 6px;
-      margin: 20px 0px 0px 20px;
-      text-color: #${palette.base0F};
-      background-color: @bg;
-    }
-  '';
+message {
+    background-color: red;
+    border: 0px solid;
+}
+    '';
 }
