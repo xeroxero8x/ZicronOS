@@ -7,9 +7,9 @@
 
 <img align="center" width="80%" src="https://gitlab.com/Zaney/zaneyos/-/raw/main/config/home/files/media/demo.jpg" />
 
-</div>
+</div> <br>
 
-&ensp; [<kbd> <br> Install <br> </kbd>](#Install)&ensp;
+&ensp; [<kbd> <br> Install <br> </kbd>](https://github.com/xeroxero8x/ZicronOS?tab=readme-ov-file#%EF%B8%8F-install)&ensp;
 
 #### 🍖 Requirements
 
