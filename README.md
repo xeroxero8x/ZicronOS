@@ -1,5 +1,4 @@
-# Welcome to ZicronOS repo
------------------------------------------
+# Welcome to ZicronOS Repo
 
 <div align="center">
 <img align="center" width="250px" src="https://github.com/xeroxero8x/asset_img/blob/main/img/logo.png"> 
@@ -9,6 +8,8 @@
 <img align="center" width="80%" src="https://gitlab.com/Zaney/zaneyos/-/raw/main/config/home/files/media/demo.jpg" />
 
 </div>
+
+&ensp; [<kbd> <br> Install <br> </kbd>](#Install)&ensp;
 
 #### 🍖 Requirements
 
@@ -29,7 +30,6 @@
 
 ![](./config/home/files/media/demo.mp4)
 
-Please do yourself a favor and [read the wiki](https://zaney.org/zaneyos/).
 
 </div>
 
@@ -45,16 +45,6 @@ Please do yourself a favor and [read the wiki](https://zaney.org/zaneyos/).
 
 ### ⬇️ Install
 
-#### 📜 Script:
-
-This is the easiest and recommended way of starting out. The script is not meant to allow you to change every option that you can in the flake or help you install extra packages. It is simply here so you can get my configuration installed with as little chances of breakages and then fiddle to your hearts content!
-
-Simply copy this and run it:
-
-```bash
-nix-shell -p git curl
-sh <(curl -L https://raw.githubusercontent.com/xeroxero8x/ZicronOS/main/install-zicronos.sh)
-```
 
 #### 🦽 Manual:
 
