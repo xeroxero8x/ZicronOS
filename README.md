@@ -1,3 +1,6 @@
+# Welcome to ZicronOS repo
+-----------------------------------------
+
 <div align="center">
 <img align="center" width="250px" src="https://github.com/xeroxero8x/asset_img/blob/main/img/logo.png"> 
 <br> 
@@ -6,9 +9,6 @@
 <img align="center" width="80%" src="https://gitlab.com/Zaney/zaneyos/-/raw/main/config/home/files/media/demo.jpg" />
 
 </div>
-
-> **This project has a [Wiki](https://zaney.org/zaneyos/). Please read it to find out information on subjects that you may need to learn more about!**
-> **I have put a lot of effort into the [documentation](https://zaney.org/zaneyos/) so it should be accurate. However, please if you notice that something is wrong with it create an issue or reach out to me on Discord.**
 
 #### 🍖 Requirements
 
