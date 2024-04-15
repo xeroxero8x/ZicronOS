@@ -6,11 +6,11 @@ let
 in {
   # Install Packages For The User
   home.packages = with pkgs; [
-    pkgs."${browser}" armcord zoxide libvirt swww grim slurp gnome.file-roller
+    pkgs."${browser}" armcord zoxide swww grim slurp gnome.file-roller
     swaynotificationcenter rofi-wayland imv transmission-gtk mpv
     gimp rustup audacity pavucontrol tree protonup-qt tldr ffmpeg
     font-awesome swayidle swaylock zip trash-cli helix keepassxc
-    jp2a asciidoctor yazi cliphist 
+    jp2a asciidoctor yazi cliphist chromium marktext 
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # Import Scripts
     (import ./../scripts/emopicker9000.nix { inherit pkgs; })

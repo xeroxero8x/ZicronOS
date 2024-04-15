@@ -4,8 +4,9 @@ let
   palette = config.colorScheme.palette;
 in {
   home.file.".config/rofi/config.rasi".text = ''
+
   * {
-    font: "JetBrains Nerd Fontt 13";
+    font: "JetBrains Nerd Font 13";
     g-spacing: 10px;
     g-margin: 0;
     b-color: #000000FF;
@@ -23,9 +24,11 @@ in {
 }
 
 configuration {
-    modi: "drun";
+    modi: "run,filebrowser,drun";
     show-icons: true;
-    display-drun: " ";
+    display-drun:    "   Apps ";
+    display-run:    "   Run ";
+    display-filebrowser:  "   File ";
 }
 
 listview {
