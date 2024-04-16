@@ -1,7 +1,7 @@
 
 <div align="center">
-# Welcome to ZicronOS repo
-  ----------
+<h1> Welcome to ZicronOS repo </h1>
+  <hr>
  <br> 
 
 <img align="center" width="250px" src="https://github.com/xeroxero8x/asset_img/blob/main/img/logo.png"> 
