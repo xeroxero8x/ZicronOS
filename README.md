@@ -3,7 +3,7 @@
 <h1> Welcome to ZicronOS repo </h1>
  <br> 
 
-<img align="center" width="250px" src="https://github.com/xeroxero8x/asset_img/blob/main/img/logo.png"> 
+<img align="center" width="250px" src="https://github.com/xeroxero8x/asset_img/blob/main/img/zicronos_img/logo.png"> 
 <br> 
 <h1> ❄️ NixOS Config</h1>
 
@@ -11,13 +11,12 @@
 
  <br>
 
-&ensp; [<kbd> <br> Install <br> </kbd>](https://github.com/xeroxero8x/ZicronOS?tab=readme-ov-file#%EF%B8%8F-install)&ensp;
 </div>
 #### 🍖 Requirements
 
 - You must be running on NixOS.
 - Must have installed using GPT & UEFI.
-- Change settings through script or manually editing options.nix file.
+- Change settings manually editing options.nix file.
 
 #### 🎹 Pipewire & Notification Menu Controls
 
