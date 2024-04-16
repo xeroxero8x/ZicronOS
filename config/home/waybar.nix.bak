@@ -53,10 +53,6 @@ in with lib; {
         format = " {free}";
         tooltip = true;
       };
-      "group/hardware" = {
-          orientation = "horizontal" ;
-          modules = ["cpu" "memory" "battery"];
-        };
       "network" = {
         format-icons = ["󰤯" "󰤟" "󰤢" "󰤥" "󰤨"];
         format-ethernet = " {bandwidthDownOctets}";

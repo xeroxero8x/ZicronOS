@@ -1,16 +1,19 @@
-# Welcome to ZicronOS Repo
 
 <div align="center">
+# Welcome to ZicronOS repo
+  ----------
+  
+
 <img align="center" width="250px" src="https://github.com/xeroxero8x/asset_img/blob/main/img/logo.png"> 
 <br> 
 <h1> ❄️ NixOS Config</h1>
 
 <img align="center" width="80%" src="https://gitlab.com/Zaney/zaneyos/-/raw/main/config/home/files/media/demo.jpg" />
 
-</div> <br>
+ <br>
 
 &ensp; [<kbd> <br> Install <br> </kbd>](https://github.com/xeroxero8x/ZicronOS?tab=readme-ov-file#%EF%B8%8F-install)&ensp;
-
+</div>
 #### 🍖 Requirements
 
 - You must be running on NixOS.
