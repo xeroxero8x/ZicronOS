@@ -16,6 +16,7 @@
     ./nushell.nix
     ./packages.nix
     ./rofi.nix
+    ./services.nix
     ./starship.nix
     ./waybar.nix
     ./wlogout.nix

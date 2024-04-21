@@ -12,6 +12,7 @@
  <br>
 
 </div>
+
 #### 🍖 Requirements
 
 - You must be running on NixOS.
@@ -27,12 +28,7 @@
 - Using scratchpads with Hyprland for increased functionality and effeciency.
 - A tmpfs for the /tmp directory is created improving rebuild time and reducing strain on hdd/ssd.
 
-<div align="center">
 
-![](./config/home/files/media/demo.mp4)
-
-
-</div>
 
 #### 📦 How To Install Packages?
 

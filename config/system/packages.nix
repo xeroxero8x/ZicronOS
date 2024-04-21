@@ -24,7 +24,6 @@
 
   programs = {
     dconf.enable = true;
-    kdeconnect.enable = true;
     adb.enable = true;
     seahorse.enable=false;
     hyprland = {

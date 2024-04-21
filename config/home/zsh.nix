@@ -5,7 +5,7 @@ lib.mkIf (theShell == "zsh") {
   programs.zsh = {
     enable = true;
     syntaxHighlighting.enable = true;
-    enableAutosuggestions = true;
+    autosuggestion.enable = true;
     historySubstringSearch.enable = true;
     profileExtra = ''
       #if [ -z "$DISPLAY" ] && [ "$XDG_VNTR" = 1 ]; then
@@ -56,6 +56,8 @@ lib.mkIf (theShell == "zsh") {
       ".."="cd ..";
       cd="z";
       neofetch="neofetch --ascii ~/.config/ascii-neofetch";
+      rm = "trash";
+      "rm -rf" ="trash";
     };
   };
 }

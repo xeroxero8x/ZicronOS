@@ -15,7 +15,7 @@ in {
   hostname = "nixos";
   gitUsername = "008";
   gitEmail = "147173391+xeroxero8x@users.noreply.github.com";
-  theme = "catppuccin-mocha";
+  theme = "tokyo-night-dark";
   slickbar = if waybarStyle == "slickbar" then true else false;
   simplebar = if waybarStyle == "simplebar" then true else false;
   bar-number = true; # Enable / Disable Workspace Numbers In Waybar
@@ -84,6 +84,9 @@ in {
   python = false;
   
   # Enable SyncThing
-  syncthing = false;
+  syncthing = true;
+
+  # Enable Kde Connetc
+  kdeconnect = true;
 
 }

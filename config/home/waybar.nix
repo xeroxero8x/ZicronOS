@@ -29,10 +29,11 @@ in with lib; {
       	on-scroll-up = "hyprctl dispatch workspace e+1";
       	on-scroll-down = "hyprctl dispatch workspace e-1";
       };
-      "clock" = {
-    	format = ''{: %H:%M}'' ;
-     	tooltip = true;
-	    tooltip-format = "<big>{:%A, %d.%B %Y }</big><tt><small>{calendar}</small></tt>";
+       "clock" = {
+	      format = if clock24h == true then '' {:L%H:%M}'' 
+	      else '' {:L%I:%M %p}'';
+      	tooltip = true;
+      	tooltip-format = "<big>{:%A, %d.%B %Y }</big><tt><small>{calendar}</small></tt>";
       };
       "hyprland/window" = {
       	max-length = 25;
@@ -97,7 +98,7 @@ in with lib; {
       };
       "custom/startmenu" = {
         tooltip = false;
-        format = " ";
+        format = " ";
         # exec = "rofi -show drun";
         on-click = "sleep 0.1 && rofi-launcher";
       };
