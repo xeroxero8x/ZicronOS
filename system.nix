@@ -11,7 +11,8 @@ in {
   imports =
     [
       ./hardware.nix
-      ./config/system
+      ./config/system 
+      ./config/scripts/ibus.nix
     ];
 
   # Enable networking

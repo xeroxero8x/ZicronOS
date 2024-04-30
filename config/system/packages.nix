@@ -1,5 +1,7 @@
 { pkgs, config, inputs, ... }:
-
+let
+  inherit (import ../../options.nix) kdeconnect;
+in 
 {
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -24,6 +26,7 @@
 
   programs = {
     dconf.enable = true;
+    kdeconnect.enable = kdeconnect;
     adb.enable = true;
     seahorse.enable=false;
     hyprland = {

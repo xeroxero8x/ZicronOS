@@ -2,6 +2,7 @@
 
 let
   palette = config.colorScheme.palette;
+  inherit (import ../../options.nix) browser;
 in {
   home.file.".config/swaync/config.json".text = ''
     {
@@ -92,11 +93,12 @@ in {
                     },
                     {
                         "label": "♾",
-                        "command": "appimage-run ~/zicronos/config/home/files/appimage/QuickShare_0.4.1.AppImage"
+                        "command": "${browser} pairdrop.net"
+                        
                     },
                     {
                         "label": "🦊",
-                        "command": "floorp"
+                        "command": "${browser}"
                     },
                     {
                         "label": "📹",
