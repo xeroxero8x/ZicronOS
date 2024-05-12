@@ -11,7 +11,7 @@ in {
     gimp rustup audacity pavucontrol tree protonup-qt tldr ffmpeg
     font-awesome swayidle swaylock zip trash-cli helix keepassxc
     jp2a asciidoctor yazi cliphist chromium marktext obsidian pairdrop
-    beeper okular onlyoffice-bin freetube zoom-us mailspring
+    beeper okular libreoffice freetube zoom-us mailspring
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # Import Scripts
     (import ./../scripts/emopicker9000.nix { inherit pkgs; })
