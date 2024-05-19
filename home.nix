@@ -18,7 +18,6 @@ in {
   imports = [
     inputs.nix-colors.homeManagerModules.default
     inputs.hyprland.homeManagerModules.default
-    inputs.hyprlock.homeManagerModules.hyprlock
     ./config/home
   ];
 

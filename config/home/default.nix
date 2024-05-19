@@ -8,7 +8,6 @@
     ./gtk-qt.nix
     ./helix.nix
     ./hyprland.nix
-#    ./hyprlock.nix
     ./kdenlive.nix
     ./kitty.nix
     ./neofetch.nix
