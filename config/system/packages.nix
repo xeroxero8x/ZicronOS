@@ -15,13 +15,7 @@ in
     noto-fonts-color-emoji material-icons brightnessctl
     toybox swappy ripgrep appimage-run #virt-viewer
     networkmanagerapplet yad playerctl nh bat lazygit
-    nil nixpkgs-fmt warp-terminal php
-    #Some Language Server Packages
-    nodePackages.bash-language-server
-    vscode-langservers-extracted
-    marksman
-    ltex-ls
-    taplo
+    warp-terminal php
   ];
 
   programs = {

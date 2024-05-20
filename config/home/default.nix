@@ -6,7 +6,6 @@
     ./alacritty.nix
     ./bash.nix
     ./gtk-qt.nix
-    ./helix.nix
     ./hyprland.nix
     ./kdenlive.nix
     ./kitty.nix
