@@ -46,7 +46,7 @@ lib.mkIf (theShell == "zsh") {
     shellAliases = {
       sv="sudo nvim";
       flake-rebuild="nh os switch --hostname ${hostname}";
-      flake-update="nh os switch --hostname ${hostname} --update";
+      flake-update="nh os switch --hostname ${hostname} --update ${flakeDir}";
       gcCleanup="nix-collect-garbage --delete-old && sudo nix-collect-garbage -d && sudo /run/current-system/bin/switch-to-configuration boot";
       v="nvim";
       ls="lsd"; #Default lsd
